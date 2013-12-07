@@ -1,0 +1,41 @@
+rename-window 'server'
+send-keys 'ttc; sleep 1' C-m
+send-keys 's' C-m
+setw -g mode-mouse on
+
+new-window
+rename-window 'mysql'
+send-keys 'ttc; sleep 1' C-m
+send-keys 'db' C-m
+
+new-window
+rename-window 'console'
+send-keys 'ttc; sleep 1' C-m
+send-keys 'c' C-m
+
+new-window
+rename-window 'guard'
+send-keys 'ttc; sleep 1' C-m
+send-keys 'guard start -i -B -g livereload jasmine' C-m
+#send-keys 'guard start -g livereload -i' C-m
+
+new-window
+rename-window 'swoosh'
+send-keys 'ttc; sleep 1' C-m
+
+new-window
+rename-window 'ruby'
+send-keys 'ttc; sleep 1' C-m
+
+select-window -t 6
+
+#split-window -h -p 35
+#send-keys 'tail -F log/test.log' C-m
+
+split-window -h -p 35
+select-pane -t 1
+send-keys 'ttc' C-m
+select-pane -t 0
+
+#set mouse-select-pane on
+#set -g mode-mouse on

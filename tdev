@@ -1,0 +1,11 @@
+selectp -t 0
+rename-window 'dev'
+splitw -h -p 30
+selectp -t 1
+splitw -v -p 85
+splitw -v -p 50
+selectp -t 0
+splitw -p 15
+selectp -t 0
+set mouse-select-pane on
+set -g mode-mouse on

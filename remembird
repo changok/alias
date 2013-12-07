@@ -1,0 +1,16 @@
+rename-window 'remembird'
+
+new-window
+rename-window 'server'
+send-keys 'npm start' C-m
+
+new-window
+rename-window 'guard'
+send-keys 'guard start -i -B -g livereload jasmine' C-m
+#send-keys 'guard start -g livereload -i' C-m
+
+split-window -h -p 35
+select-pane -t 0
+
+#set mouse-select-pane on
+#set -g mode-mouse on

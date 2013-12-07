@@ -1,0 +1,17 @@
+rename-window 'ruby'
+
+new-window
+rename-window 'cdngoose-tunnels'
+send-keys 'rake ms:run:ide' C-m
+
+#selectp -t 0
+#rename-window 'monorail'
+#splitw -h -p 35
+#send-keys './script/server' C-m
+#splitw -v -p 66
+#send-keys 'tail -F log/development.log' C-m
+#splitw -v -p 50
+#send-keys '\guard start -g livereload' C-m
+#selectp -t 0
+#set mouse-select-pane on
+#set -g mode-mouse on
